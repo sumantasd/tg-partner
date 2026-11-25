@@ -1,0 +1,72 @@
+# Environment and local configurations
+.env
+.env.*
+!.env.example
+.env.backup
+.env.production
+auth.json
+
+# Composer & NPM dependencies
+/vendor
+/node_modules
+
+# Frontend build assets & hot reloads
+/public/build
+/public/hot
+/public/storage
+
+# Storage private application files, KYC, agreements, and backups
+/storage/app/private/*
+!/storage/app/private/.gitignore
+/storage/app/private/agreements/*
+!/storage/app/private/agreements/.gitignore
+/storage/app/private/backups/*
+!/storage/app/private/backups/.gitignore
+/storage/app/kyc_documents/*
+/storage/app/agreements/*
+/storage/app/public/kyc-documents/*
+!/storage/app/public/kyc-documents/.gitignore
+/storage/app/public/profile-photos/*
+!/storage/app/public/profile-photos/.gitignore
+
+# Framework caches, sessions, views, and logs
+/storage/framework/cache/data/*
+!/storage/framework/cache/data/.gitignore
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitignore
+/storage/framework/testing/*
+!/storage/framework/testing/.gitignore
+/storage/framework/views/*
+!/storage/framework/views/.gitignore
+/storage/logs/*.log
+*.log
+/storage/*.key
+/storage/pail
+
+# Database exports, dumps, archives, and backups
+*.sql
+*.sqlite
+*.dump
+*.zip
+*.tar
+*.tar.gz
+*.gz
+*.bak
+
+# Temporary and scratch artifacts
+/scratch/
+.phpunit.result.cache
+/.phpunit.cache
+
+# IDE, Editor, and OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+.phpactor.json
+Homestead.json
+Homestead.yaml
